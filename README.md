@@ -1,2 +1,2 @@
-#SVG test Project
+#SVG Test Project
 
