@@ -12,5 +12,5 @@ rect {
 }
 .second rect:hover {
   fill: #f00;
-  transform: scale(1.2) rotate(90deg);
+  transform: scale(1.2) rotate(180deg);
 }
