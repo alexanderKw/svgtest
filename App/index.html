@@ -54,6 +54,21 @@
     <image x="200" y="0" width="200" height="200" xlink:href="https://lorempixel.com/200/200/cats" style="filter: url(#blurFilter)"
     />
   </svg>
+
+  <svg version="1.1" xmlns="https://www.w3.org/2000/svg" width="200" height="200">
+    <defs>
+      <linearGradient id="gr1" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="0%" stop-color="#fff" />
+        <stop offset="100%" stop-color="#f00" />
+      </linearGradient>
+      <linearGradient id="gr2" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="0%" stop-color="#f00" />
+        <stop offset="100%" stop-opacity="0.4" stop-color="#00f" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="200" height="100" fill="url(#gr1)" />
+    <circle cx="100" cy="150" r="50" fill="url(#gr2)" />
+  </svg>
 </body>
 
 </html>
