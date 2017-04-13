@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <svg version="1.1" baseProfile="full" width="400" height="320" xmlns="http://www.w3.org/2000/svg">
+  <svg version="1.1" baseProfile="full" width="400" height="300" xmlns="http://www.w3.org/2000/svg">
     <circle cx="60" cy="65" r="60" style="fill:#fc0204;stroke-width:12" />
     <rect x="17" y="53" width="86" height="24" rx="2" fill="#fff" />
 
@@ -21,6 +21,12 @@
     <circle cx="315" cy="65" r="52" stroke-width="15" style="fill:#fff;stroke:#fc0204" />
     <text x="284" y="75" style="font:bold 38px Arial,sans-serif">500</text>
 
+    <defs>
+      <polygon id="star" points="100,300 140,200 180,300 85,240 195,240" style="stroke: #f00; stroke-width: 2; transform:scale(0.5)"
+      />
+    </defs>
+    <use x="130" y="100" xlink:href="#star" />
+
     <g id="circle-border">
       <circle cx="10" cy="250" r="5" stroke-width="2" style="stroke: #000; fill: #f00; fill-opacity: .4" />
     </g>
@@ -31,6 +37,22 @@
     <use x="365" y="0" xlink:href="#circle-border" />
     <use x="350" y="0" xlink:href="#circle-border" />
     <use x="335" y="0" xlink:href="#circle-border" />
+  </svg>
+
+  <svg version="1.1" viewBox="0 0 100 100" width="100" height="100" xmlns="http://www.w3.org/2000/svg" class="second">
+    <rect x="25" y="25" width="25" height="25" />
+  </svg>
+
+  <svg version="1.1" baseProfile="full" width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="blurFilter">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+      </filter>
+    </defs>
+
+    <image x="0" y="0" width="200" height="200" xlink:href="https://lorempixel.com/200/200/cats" />
+    <image x="200" y="0" width="200" height="200" xlink:href="https://lorempixel.com/200/200/cats" style="filter: url(#blurFilter)"
+    />
   </svg>
 </body>
 
